@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<song_info> {
-    public SongAdapter(Activity context, ArrayList<song_info> songs){
+    public SongAdapter(Activity context, ArrayList<song_info> songs) {
         super(context, 0, songs);
     }
 
@@ -20,7 +20,7 @@ public class SongAdapter extends ArrayAdapter<song_info> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View gridItemView = convertView;
-        if(gridItemView == null) {
+        if (gridItemView == null) {
             gridItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.activity_home, parent, false);
         }
@@ -33,12 +33,8 @@ public class SongAdapter extends ArrayAdapter<song_info> {
         TextView artistNameTextView = (TextView) gridItemView.findViewById(R.id.artist_name);
         artistNameTextView.setText(currentSong.getmArtistName());
 
-        TextView albumNameTextView = (TextView)gridItemView.findViewById(R.id.album_name);
+        TextView albumNameTextView = (TextView) gridItemView.findViewById(R.id.album_name);
         albumNameTextView.setText(currentSong.getmAlbumName());
-//
-//        TextView songLengthTextView = (TextView)gridItemView.findViewById(R.id.song_length);
-//        songLengthTextView.setText((int) currentSong.getmSongLen());
-
         return gridItemView;
     }
 }

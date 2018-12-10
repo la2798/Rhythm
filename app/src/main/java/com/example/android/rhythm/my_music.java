@@ -14,10 +14,9 @@ public class my_music extends AppCompatActivity {
         setContentView(R.layout.activity_my_music);
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu options_main from the res/menu/menu_catalog.xml file.
-        // This adds menu items to the app bar.
         getMenuInflater().inflate(R.menu.options_now_playing, menu);
         return true;
     }
@@ -26,13 +25,12 @@ public class my_music extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
         switch (item.getItemId()) {
-            // Respond to a click on the "Delete all entries" menu option
             case R.id.action_home:
-                intent = new Intent(my_music.this,home.class);
+                intent = new Intent(my_music.this, home.class);
                 startActivity(intent);
                 return true;
             case R.id.action_favorites:
-                intent = new Intent(my_music.this,favorites.class);
+                intent = new Intent(my_music.this, favorites.class);
                 startActivity(intent);
                 return true;
         }

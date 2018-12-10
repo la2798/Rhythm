@@ -22,8 +22,4 @@ public class song_info {
     public String getmAlbumName() {
         return mAlbumName;
     }
-
-    public double getmSongLen() {
-        return mSongLen;
-    }
 }
