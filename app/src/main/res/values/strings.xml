@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rhythm</string>
+    <string name="now_playing">Now playing</string>
+    <string name="about_us">About us\'</string>
+    <string name="favourites">Favorites</string>
+    <string name="home">Home</string>
+</resources>
